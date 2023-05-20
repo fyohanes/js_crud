@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+           <h1 class="crudOperation"> Crud Operation </h1>
+            <div class="form">
+                    <input type="text" placeholder="Enter name here" id="input_name">
+                    <input type="email" placeholder="Enter email here" id="input_email">
+                    <button class="button" id="add_btn"> Add </button>
+            </div>
+            <div class="tableContainer">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>name</th>
+                            <th>email</th>
+                            <th>action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table_body" id="table_body"></tbody>
+                </table>
+            </div>
+            <div class="updateContainer" id="updateContainer">
+                <input type="text" id="update_name">
+                <input type="text" id="email_update">
+                <button class="updateButton" id="update_btn">Update</button>
+                <button class="cancelButton" id="delete_btn">Cancel</button>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
